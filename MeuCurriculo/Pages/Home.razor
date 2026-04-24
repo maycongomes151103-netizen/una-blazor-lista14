@@ -1,0 +1,44 @@
+﻿@page "/"
+
+<PageTitle>Currículo | Dev .NET</PageTitle>
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="text-center p-4 bg-light rounded-3 mb-4">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.ngmTp756UWKPdRS6-feDUgHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-circle mb-3"
+                    alt="Retrato em close de Maycon Gomes, desenvolvedor fullstack, com expressão tranquila e leve sorriso, em ambiente neutro de fundo claro"
+                     width="120" />
+                <h3>Maycon Gomes</h3>
+                <p class="text-muted">Desenvolvedor Fullstack</p>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <h2 class="mb-4">Experiência Profissional</h2>
+            
+            @foreach (var exp in MinhasExperiencias)
+            {
+                <ExperienciaCard Dados="exp" />
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Experiencia> MinhasExperiencias = new()
+    {
+        new Experiencia {
+            Empresa = "Importec Atacado",
+            Cargo = "Analista de Sistemas",
+            Inicio = "2024", Fim = "Atual",
+            Descricao = "Atuação no desenvolvimento de sites na empresa e suporte técnico pra a equipe."
+        },
+        new Experiencia {
+            Empresa = "Iniciativa Pessoal",
+            Cargo = "Freelancer",
+            Inicio = "2023", Fim = "Atual",
+            Descricao = "Criação de sites institucionais e manutenção de sistemas, criaçao de paginas na empresa e lojas pessoais criando aplicativos e sites."
+        }
+    };
+}
