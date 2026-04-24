@@ -5,7 +5,7 @@ Interação e humano em ux
 • Guia de Execução: Criar o arquivo dotnet new Blazor -n MeuCurriculo , dar um cd documents e compilar para o vs code dando um code . 
 
 
-• Tecnologia utilizada: Blazor + C#
+• Tecnologia utilizada: Blazor + C# 
 
 • Screenshot: <img width="1102" height="643" alt="r6" src="https://github.com/user-attachments/assets/da8db34e-5b3f-4114-8b65-ca746abf52c6" />
 
