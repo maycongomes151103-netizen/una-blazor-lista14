@@ -1,6 +1,6 @@
 Maycon De Oliveira Gomes Batista 
 Analise e Desenvolvimento de sistemas
-
+Interação e humano em ux
 
 • Guia de Execução: Criar o arquivo dotnet new Blazor -n MeuCurriculo , dar um cd documents e compilar para o vs code dando um code . 
 
